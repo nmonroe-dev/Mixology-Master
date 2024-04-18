@@ -1,0 +1,81 @@
+
+
+/* Set background color of the body */
+body {
+    background-color: black;
+}
+
+/* Styling for the main container */
+#main {
+    border: solid 2px black;
+    height: 1050px;
+    width: 70%;
+    margin-left: 15%;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+/* Styling for the header image */
+#main #header #headerImg {
+    height: auto; /* Making sure the image height adjusts proportionally */
+    width: 100%;
+    object-fit: cover; /* Covering the container while preserving aspect ratio */
+}
+
+/* Center-align the h1 element */
+h1 {
+    text-align: center;
+}
+
+/* Styling for the choose section */
+#chooseSection {
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+    text-align: center;
+}
+
+/* Styling for buttons in the choose section */
+#chooseSection .button {
+    height: 30px;
+    width: 200px;
+    margin-right: 5px;
+    margin-top: 30px;
+    box-shadow: 10px 1px 10px grey;
+    border: none;
+    background-color: gainsboro;  
+}
+
+/* Styling for the image section */
+#main #imgSection {
+    box-shadow: 10px 1px 10px rgb(82, 85, 95);
+    height: 150px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* Styling for the drink image */
+#main #imgSection #drink {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Styling for the information section */
+#main #infoSection {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+/* Styling for list items in the information section */
+#main #infoSection ul li {
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+/* Styling for horizontal line in the information section */
+#main #infoSection hr {
+    color: rgba(88, 85, 85, 0.664);
+}
