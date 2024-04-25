@@ -1,5 +1,10 @@
 
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 /* Set background color of the body */
 body {
     background-color: black;
@@ -8,10 +13,10 @@ body {
 /* Styling for the main container */
 #main {
     border: solid 2px black;
-    height: 1050px;
+    height: 100%;
     width: 70%;
     margin-left: 15%;
-    background-color: whitesmoke;
+    background-color: white;
     text-align: center;
 }
 
@@ -25,6 +30,10 @@ body {
 /* Center-align the h1 element */
 h1 {
     text-align: center;
+    margin-top: -10px;
+}
+#main #welcomeStatement {
+   font-size: 15px;
 }
 
 /* Styling for the choose section */
@@ -45,15 +54,22 @@ h1 {
     border: none;
     background-color: gainsboro;  
 }
-
+ #main #nameOfDrink {
+    margin-top: -20px;
+    margin-bottom: 20px;
+ }
 /* Styling for the image section */
 #main #imgSection {
     box-shadow: 10px 1px 10px rgb(82, 85, 95);
     height: 150px;
     width: 200px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
-
+hr {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 /* Styling for the drink image */
 #main #imgSection #drink {
     height: 100%;
@@ -72,10 +88,47 @@ h1 {
 /* Styling for list items in the information section */
 #main #infoSection ul li {
     list-style-type: none;
-    margin-right: 50px;
+    
 }
 
 /* Styling for horizontal line in the information section */
 #main #infoSection hr {
     color: rgba(88, 85, 85, 0.664);
+}
+
+
+@media only screen and (max-width: 677px) {
+    #main {
+        
+        height: 100%;
+        width: 100vw;
+        margin-left: unset;
+        
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: unset;
+        font-size: 20px;
+        margin-bottom: 20px;
+        
+    }
+    #chooseSection {
+        display: block;
+        margin-bottom: 10px;
+    }
+    #chooseSection .button {
+        height: 30px;
+        width: 100px;
+        margin-top: auto;
+        font-size: 10px;
+    
+    }
+    #main #imgSection {
+        margin-bottom: 20px;
+    }
+    hr {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
 }
